@@ -1,0 +1,191 @@
+body{
+    background: rgb(238, 235, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}  
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: cornsilk;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+   
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.container .left{
+  position: relative;
+  background: #4287f5;
+  padding: 55px;
+}
+.container .right{
+  position: relative;
+  background: #d3d7dd;
+  padding: 55px;
+}
+
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+
+}
+
+.profile .image{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.profile .image img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.profile h2{
+      color: rgb(6, 14, 17);
+      font-size: 1.4em;
+      margin-top: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+      line-height: 1.4em;
+}
+
+.contactinfor{
+    padding-top: 40px;
+    display: inline;    
+}
+.title{
+    color: rgb(6, 14, 17);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.contactinfor ul{
+  position: relative;
+  
+
+}
+
+.contactinfor ul li{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contactinfor ul li .icon{
+  display: inline-block;
+  width: 15px;
+  font-size: 18px;
+  color: black;
+}
+.contactinfor .text{
+    position: relative;
+    display: inline;
+}
+
+.contactinfor ul li span{
+    color: rgb(6, 14, 17);
+    font-weight: 300;
+}
+
+.about{
+    margin-top: 37px;
+    border-bottom: 1px solid grey;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title1{
+    color: #4287f5;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-decoration: underline#4287f5;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .company{
+    min-width: 150px;
+}
+.about .box .company h5{
+    text-transform: uppercase;
+    color: rgb(17, 39, 48);
+    font-weight: 600;
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: black;
+    font-size: 16px;
+
+}
+
+.skills{
+    border-bottom: 1px solid grey;
+}
+
+.skills ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.skills ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.skills ul li .fa{
+
+font-size: 17px;
+width: 25px;
+}
+
+.skills ul li .fab{
+   
+    font-size: 17px;
+    width: 25px;
+    }
+
+    .skills ul li .far{
+   
+        font-size: 17px;
+        width: 25px;
+        }
+
+@media (max-width: 1000px)
+{
+    .container{
+        margin: 15px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width: 1000px){
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .company{
+        margin-bottom: 5px;
+    }
+}
